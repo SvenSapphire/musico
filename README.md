@@ -1,8 +1,6 @@
 # Musico
 **Lightweight** discord music bot for linux
 
-**Read the "Important" paragraph**
-
 Pull requests are warmly welcome. Help to make Musico 
 better❤️!
 
@@ -40,15 +38,6 @@ detach again with "Ctrl+a" followed by "d"
 - Use the **!join** command to connect the bot to the voice channel
 - !play https://www.youtube.com/watch?v=dQw4w9WgXcQ
 - enjoy!
-- don't forget to **!leave** because he will stay eternally 
-
-## Important: 
-- If you play a track Musico never played before, it will take
-a while to download it in the background. It will than start
-automatically after the download. If you play a "known 
-(downloaded)" song it will start immediately. 
-- Currently, Musico is not able to make queues, you need to wait 
-until the played song is finished to start a new track.
 
 ## Tested systems:
 - Linux Ubuntu
