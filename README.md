@@ -44,7 +44,7 @@ detach again with "Ctrl+a" followed by "d"
 - Raspberry Pi with debian
 - other systems might work with changes on the **FFmpegPCMAudio()** line
 
-##License:
+## License:
 [MIT](https://github.com/SvenSapphire/Musico/blob/master/LICENSE) 
 
 **Free Software, Nice!**
