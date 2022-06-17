@@ -1,0 +1,5 @@
+youtube-dl~=2021.12.17
+discord
+python-dotenv
+cffi
+PyNaCl
