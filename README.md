@@ -1,6 +1,7 @@
 # Musico
 **Lightweight** discord music bot for linux
 
+Musico is now available as docker
 Pull requests are warmly welcome. Help to make Musico 
 better❤️!
 
