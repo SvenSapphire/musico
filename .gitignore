@@ -132,3 +132,5 @@ dmypy.json
 *.webm
 
 docker-compose.yml
+.DS_Store
+.idea/
