@@ -4,6 +4,8 @@
 Pull requests are warmly welcome. Help to make Musico 
 better❤️!
 
+**Musico is now available as docker**
+
 ## Requirements:
 ```shell
 sudo apt-get install python3
