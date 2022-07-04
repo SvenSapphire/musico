@@ -6,6 +6,14 @@ better❤️!
 
 **Musico is now available as docker**
 
+## Docker setup:
+- copy the project into your local system
+- rename the file *.env.example* into **.env**
+- insert your discord-token (same step as the normal setup below)
+- make sure docker is installed!
+- run command `docker build -t <your_desired_name> .`
+- run command `docker run <your_desired_name>`
+
 ## Requirements:
 ```shell
 sudo apt-get install python3
@@ -18,8 +26,9 @@ sudo apt-get install python3-dotenv
 ## Setup:
 - register @ the official discord developer portal [here](https://discord.com/developers/applications)
 - make a new bot
-- in your projects-folder make a new file called **.env**
-- fill the **.env** with your own discord-bot-token
+- rename the file *.env.example* into **.env**
+- insert your discord-token
+
 
 ## Starting:
 ```shell
@@ -44,6 +53,7 @@ detach again with "Ctrl+a" followed by "d"
 ## Tested systems:
 - Linux Ubuntu
 - Raspberry Pi with debian
+- docker 
 - other systems might work with changes on the **FFmpegPCMAudio()** line
 
 ## License:
