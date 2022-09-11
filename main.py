@@ -499,14 +499,26 @@ class Music(commands.Cog):
                 raise commands.CommandError('Bot is already in a voice channel.')
 
 
-intents = discord.Intents.all()
-bot = commands.Bot('!', description='Sheesh new music bot', intents=intents)
-bot.add_cog(Music(bot))
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(
+    command_prefix=commands.when_mentioned_or("!"),
+    description='Your music discord bot',
+    intents=intents,
+)
 
 
 @bot.event
 async def on_ready():
-    print('Logged in as:\n{0.user.name}\n{0.user.id}'.format(bot))
+    print(f'Logged in as {bot.user} (ID: {bot.user.id})')
+    print('------')
 
 
-bot.run(DISCORD_TOKEN)
+async def main():
+    async with bot:
+        await bot.add_cog(Music(bot))
+        await bot.start(DISCORD_TOKEN)
+
+
+asyncio.run(main())
