@@ -38,7 +38,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         'quiet': True,
         'no_warnings': True,
         'default_search': 'auto',
-        #'default_search': 'ytsearch',
+        # 'default_search': 'ytsearch',
         'source_address': '0.0.0.0',
     }
 
@@ -499,7 +499,8 @@ class Music(commands.Cog):
                 raise commands.CommandError('Bot is already in a voice channel.')
 
 
-bot = commands.Bot('!', description='Sheesh new music bot')
+intents = discord.Intents.all()
+bot = commands.Bot('!', description='Sheesh new music bot', intents=intents)
 bot.add_cog(Music(bot))
 
 
@@ -509,4 +510,3 @@ async def on_ready():
 
 
 bot.run(DISCORD_TOKEN)
-
